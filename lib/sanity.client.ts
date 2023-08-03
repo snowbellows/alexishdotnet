@@ -1,9 +1,12 @@
 import { apiVersion, dataset, projectId, useCdn } from 'lib/sanity.api'
 import {
-  indexQuery,
+  type Category,
+  categoryQuery,
+  categorySlugsQuery,
   type Post,
   postAndMoreStoriesQuery,
   postBySlugQuery,
+  postIndexQuery,
   postSlugsQuery,
   type Settings,
   settingsQuery,
@@ -26,7 +29,7 @@ export async function getSettings(): Promise<Settings> {
 
 export async function getAllPosts(): Promise<Post[]> {
   if (client) {
-    return (await client.fetch(indexQuery)) || []
+    return (await client.fetch(postIndexQuery)) || []
   }
   return []
 }
@@ -61,4 +64,19 @@ export async function getPostAndMoreStories(
     return await client.fetch(postAndMoreStoriesQuery, { slug })
   }
   return { post: null, morePosts: [] }
+}
+
+export async function getAllCategories(): Promise<Category[]> {
+  if (client) {
+    return (await client.fetch(categoryQuery)) || []
+  }
+  return []
+}
+
+export async function getAllCategoriesSlugs(): Promise<Pick<Category, 'slug'>[]> {
+  if (client) {
+    const slugs = (await client.fetch<string[]>(categorySlugsQuery)) || []
+    return slugs.map((slug) => ({ slug }))
+  }
+  return []
 }

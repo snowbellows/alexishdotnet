@@ -1,9 +1,9 @@
-import Container from 'components/BlogContainer'
-import BlogHeader from 'components/BlogHeader'
-import IndexPageHead from 'components/BlogIndexPageHead'
-import Layout from 'components/BlogLayout'
-import HeroPost from 'components/HeroPost'
-import MoreStories from 'components/MoreStories'
+import BlogHeader from 'components/blog/BlogHeader'
+import IndexPageHead from 'components/blog/BlogIndexPageHead'
+import Layout from 'components/blog/BlogLayout'
+import HeroPost from 'components/blog/HeroPost'
+import MoreStories from 'components/blog/MoreStories'
+import Container from 'components/Container'
 import type { Post, Settings } from 'lib/sanity.queries'
 
 export interface IndexPageProps {
