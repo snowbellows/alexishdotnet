@@ -43,6 +43,13 @@ export default function IndexPage(props: IndexPageProps) {
               </button>
             </div>
           </header>
+          <Link href="/projects">
+            <div className="mt-20 flex h-20 items-center justify-center bg-black">
+              <span className="pb-3 font-bitter text-4xl font-light text-slate-100">
+                projects
+              </span>
+            </div>
+          </Link>
         </Container>
       </Layout>
     </>
