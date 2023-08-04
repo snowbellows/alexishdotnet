@@ -1,7 +1,6 @@
 import 'tailwindcss/tailwind.css'
 
 import { AppProps } from 'next/app'
-
 import localFont from 'next/font/local'
 
 const bitter = localFont({
