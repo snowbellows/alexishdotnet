@@ -54,8 +54,7 @@ export default defineType({
     }),
     defineField({
       name: 'homeContent',
-      description:
-        'Used on the home page beneath the description',
+      description: 'Used on the home page beneath the description',
       title: 'Home Page Content',
       type: 'array',
       of: [

@@ -1,4 +1,3 @@
-import Container from 'components/Container'
 import BlogHeader from 'components/blog/BlogHeader'
 import Layout from 'components/blog/BlogLayout'
 import MoreStories from 'components/blog/MoreStories'
@@ -7,6 +6,7 @@ import PostHeader from 'components/blog/PostHeader'
 import PostPageHead from 'components/blog/PostPageHead'
 import PostTitle from 'components/blog/PostTitle'
 import SectionSeparator from 'components/blog/SectionSeparator'
+import Container from 'components/Container'
 import type { Post, Settings } from 'lib/sanity.queries'
 import { notFound } from 'next/navigation'
 

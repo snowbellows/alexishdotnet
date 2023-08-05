@@ -90,7 +90,6 @@ To deploy your changes to production just push or merge a PR to the `main` branc
 Go to the serverless function code in `/pages/api/revalidate.ts`. In the code comments, you'll find instructions for how to set up ISR.
 
 [nextjs]: https://github.com/vercel/next.js
-
 [sanity-homepage]: https://www.sanity.io?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
 [sanity-schema-types]: https://www.sanity.io/docs/schema-types?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter
 [sanity-groq]: https://www.sanity.io/docs/groq?utm_source=github.com&utm_medium=referral&utm_campaign=nextjs-v3vercelstarter

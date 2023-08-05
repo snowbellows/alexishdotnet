@@ -1,8 +1,8 @@
 import IndexPage from 'components/blog/BlogIndexPage'
 import { usePreview } from 'lib/sanity.preview'
 import {
-  postIndexQuery,
   type Post,
+  postIndexQuery,
   type Settings,
   settingsQuery,
 } from 'lib/sanity.queries'

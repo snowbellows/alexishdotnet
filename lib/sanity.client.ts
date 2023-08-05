@@ -73,7 +73,9 @@ export async function getAllCategories(): Promise<Category[]> {
   return []
 }
 
-export async function getAllCategoriesSlugs(): Promise<Pick<Category, 'slug'>[]> {
+export async function getAllCategoriesSlugs(): Promise<
+  Pick<Category, 'slug'>[]
+> {
   if (client) {
     const slugs = (await client.fetch<string[]>(categorySlugsQuery)) || []
     return slugs.map((slug) => ({ slug }))
