@@ -89,6 +89,7 @@ export interface Category {
 export interface Settings {
   title?: string
   description?: any[]
+  homeContent?: any[]
   ogImage?: {
     title?: string
   }

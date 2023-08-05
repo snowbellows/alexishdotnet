@@ -53,6 +53,39 @@ export default defineType({
       validation: (rule) => rule.max(155).required(),
     }),
     defineField({
+      name: 'homeContent',
+      description:
+        'Used on the home page beneath the description',
+      title: 'Home Page Content',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'block',
+          options: {},
+          styles: [],
+          lists: [],
+          marks: {
+            decorators: [],
+            annotations: [
+              defineField({
+                type: 'object',
+                name: 'link',
+                fields: [
+                  {
+                    type: 'string',
+                    name: 'href',
+                    title: 'URL',
+                    validation: (rule) => rule.required(),
+                  },
+                ],
+              }),
+            ],
+          },
+        }),
+      ],
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'ogImage',
       title: 'Open Graph Image',
       description:

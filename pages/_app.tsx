@@ -1,6 +1,7 @@
 import 'tailwindcss/tailwind.css'
 
 import { AppProps } from 'next/app'
+import { Work_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 
 const bitter = localFont({
@@ -39,10 +40,16 @@ const bitter = localFont({
   ],
 })
 
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans',
+  weight: 'variable',
+})
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className={`${bitter.variable}`}>
+      <div className={`${bitter.variable} ${workSans.variable}`}>
         <Component {...pageProps} />
       </div>
     </>

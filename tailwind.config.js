@@ -27,7 +27,8 @@ module.exports = {
         tight: 1.2,
       },
       fontFamily: {
-        bitter: ['var(--font-bitter)']
+        bitter: ['var(--font-bitter)'],
+        sans: ['var(--font-work-sans)']
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
