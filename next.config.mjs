@@ -18,7 +18,7 @@ const config = {
     return [
       {
         source: '/posts/:slug*',
-        destination: '/blog/:slug*', 
+        destination: '/blog/:slug*',
         permanent: true,
       },
     ]

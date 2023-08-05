@@ -1,0 +1,27 @@
+.linkBarBackground {
+  background-image: var(--image-default);
+}
+
+@media screen(sm) {
+  .linkBarBackground {
+    background-image: var(--image-sm);
+  }
+}
+
+@media screen(md) {
+  .linkBarBackground {
+    background-image: var(--image-md);
+  }
+}
+
+@media screen(lg) {
+  .linkBarBackground {
+    background-image: var(--image-lg);
+  }
+}
+
+@media screen(xl) {
+  .linkBarBackground {
+    background-image: var(--image-xl);
+  }
+}

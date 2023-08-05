@@ -1,0 +1,15 @@
+.portableText {
+  @apply text-lg leading-relaxed;
+}
+
+.portableText p {
+  @apply my-6;
+}
+
+.portableText a {
+  @apply text-blue-500 underline;
+}
+
+.portableText a:hover {
+  @apply text-blue-800;
+}
