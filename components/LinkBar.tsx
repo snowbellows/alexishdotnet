@@ -24,9 +24,9 @@ export default function LinkBar(props: LinkBarProps) {
     images.xl || images.lg || images.md || images.sm || images.default
 
   return (
-    <Link href={href} className="lg:basis-1/3">
+    <Link href={href} className="lg:basis-1/3 lg:grayscale-0 lg:transition lg:ease-in-out lg:duration-300 lg:hover:grayscale hover:underline focus:underline lg:focus:grayscale decoration-stone-100 decoration-4 underline-offset-4">
       <div
-        className={`flex h-32 items-center justify-center border-stone-800 bg-stone-800 bg-cover bg-center shadow-[inset_0_0_15px_5px_#0c0a09] md:42 lg:grayscale-0 lg:transition lg:ease-in-out lg:duration-300 lg:hover:grayscale lg:hover:underline decoration-stone-100 lg:decoration-4 lg:underline-offset-4 xl:h-56  ${styles.linkBarBackground}`}
+        className={`flex h-32 items-center justify-center border-stone-800 bg-stone-800 bg-cover bg-center shadow-[inset_0_0_15px_5px_#0c0a09] md:42 xl:h-56  ${styles.linkBarBackground}`}
         style={
           {
             '--image-default': `url(${images.default})`,
