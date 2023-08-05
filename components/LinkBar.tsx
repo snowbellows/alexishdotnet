@@ -26,7 +26,7 @@ export default function LinkBar(props: LinkBarProps) {
   return (
     <Link href={href} className="lg:basis-1/3">
       <div
-        className={`md:42 flex h-32 items-center justify-center border-stone-800 bg-stone-800 bg-cover bg-center shadow-[inset_0_0_15px_5px_#0c0a09] grayscale-0 transition ease-in-out hover:grayscale xl:h-56  ${styles.linkBarBackground}`}
+        className={`flex h-32 items-center justify-center border-stone-800 bg-stone-800 bg-cover bg-center shadow-[inset_0_0_15px_5px_#0c0a09] md:42 lg:grayscale-0 lg:transition lg:ease-in-out lg:duration-300 lg:hover:grayscale lg:hover:underline decoration-stone-100 lg:decoration-4 lg:underline-offset-4 xl:h-56  ${styles.linkBarBackground}`}
         style={
           {
             '--image-default': `url(${images.default})`,
@@ -37,7 +37,7 @@ export default function LinkBar(props: LinkBarProps) {
           } as React.CSSProperties
         }
       >
-        <div className="pb-3 font-bitter text-5xl text-stone-100 drop-shadow-[0_0_3px_#0c0a09] xl:text-6xl">
+        <div className="pb-3 font-bitter text-5xl text-stone-100  drop-shadow-[0_0_3px_#0c0a09] xl:text-6xl">
           {children}
         </div>
       </div>
